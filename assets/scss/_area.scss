@@ -1,0 +1,119 @@
+/* ----------------------------------
+	area section Styles
+ ------------------------------------ */
+
+ .area-section{
+    overflow: hidden;
+    position: relative;
+    background-color: $shadow;
+    z-index: -1;
+    .area-container{
+        padding-left: 400px;
+        padding-right: 20px;
+        @media (max-width:1700px) {
+            padding-left :300px;
+        }
+        @media (max-width:1600px) {
+            padding-left :250px;
+        }
+        @media (max-width:1500px) {
+            padding-left :180px;
+        }
+        @media (max-width:1366px) {
+            padding-left :100px;
+        }
+        @media (max-width:1200px) {
+            padding-left :30px;
+        }
+        @media (max-width:1080px) {
+            padding-left :20px;
+            padding-right: 20px;
+        }
+        .section-title{
+            @media (max-width:575px) {
+               text-align: center;
+            }
+        }
+        .area-future{
+            width: 290px;
+            height: auto;
+            @media (max-width:768px) {
+               text-align: center;
+            }
+        }
+        .card{
+            border: none;
+            margin: 10px;
+            .blog-featured-img{
+                height: 200px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            .card-body{
+                padding: 30px 0px;
+            }
+            h4{
+                margin-bottom: 15px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 100%;
+            }
+            p{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 26px;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            a{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 26px;
+                color: $secondary;
+                position: relative;
+               @include transition(0.4s);
+                &::after{
+                    position: absolute;
+                    content: '\f178';
+                    font-family: $fa;
+                    font-weight: 500;
+                    top: 0;
+                    left: 110%;
+                    visibility: hidden;
+                    opacity: 0;
+                    @include transition(0.4s);
+                }
+                &:hover{
+                     color: $primary;
+                     i{
+                         visibility: hidden;
+                         opacity: 0;
+                     }
+                     &::after{
+                         visibility: visible;
+                         opacity: 1;
+                     }  
+                 }
+            }
+            &:hover{
+               box-shadow: 0px 2px 30px rgba(1, 138, 189, 0.1);
+            }
+        }
+    }
+    .sercale{
+        transform: rotate(180deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .sercale-tow{
+        position: absolute;
+        top: 0;
+        right: -27%;
+        z-index: -1;
+    }
+}

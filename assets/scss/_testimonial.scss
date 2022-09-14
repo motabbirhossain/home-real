@@ -1,0 +1,30 @@
+/* ----------------------------------
+ Testimonials Section Styles
+ ------------------------------------ */
+ .testimonials-wrapper{
+    .testimonial-carousel-img-wrapper{
+        .testimonial-carousel{
+            .item-img{
+                position: relative;
+                max-width: 450px;
+                height: 450px;
+                .icon{
+
+                }
+                &::after{
+                    clear: both;
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    top: -15%;
+                    left: -15%;
+                    height: 100%;
+                    width: 100%;
+                    border: 20px solid #97CBDC;
+                    border-radius: 6px;
+                    z-index: -5;
+                }
+            }
+        }
+    }
+ }

@@ -1,0 +1,33 @@
+/* ----------------------------------
+FAQ Section Styles
+ ------------------------------------ */
+
+
+.question-wrapper{
+    overflow: hidden;
+    .faq-content{
+        .accordion{
+            .accordion-item{
+                border-bottom: 1px solid #EDF3F7;
+                border-left:  none;
+                border-right: none;
+                border-top: none;
+                .accordion-button{
+                    padding: 25px 0px;
+                    background-color: transparent;
+                    color: $primary;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+        }
+        .accordion-button:focus{
+            outline: none;
+            box-shadow: none;
+        }
+        .accordion-button:not(.collapsed){
+            box-shadow: none;
+        }
+    }
+}

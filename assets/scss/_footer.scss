@@ -1,0 +1,237 @@
+/* ----------------------------------
+	footer Section Styles
+ ------------------------------------ */
+.footer-bar{
+    z-index: 200;
+    margin-bottom: -190px;
+    .inner{
+        padding: 60px 0px;
+        border-radius: 30px;
+        background-color: $secondary;
+        position: relative;
+        .single_man{
+            display: inline;
+            .single-face{
+                border: 2px solid #EDF3F7;
+                width: 45px;
+                height: 45px;
+                display: inline-block;
+                border-radius: 50%;
+                margin-left: -15px;
+                @include  transition(0.4s);
+            }
+            &:hover{
+                .single-face{
+                    margin-left: -5px;
+                }
+            }
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: $white;
+            margin: 25px 0px;
+        }
+        h2{
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 50px;
+            color: $white;
+            margin-bottom: 40px;
+        }
+        .theme-btn{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            padding: 15px 25px;
+            color: $white;
+            text-transform: capitalize;
+            box-shadow: 0px 1px 2px rgba(198, 228, 246, 0.05);
+            border-radius: 999px;
+            // &:hover{
+            //     background-color: $secondary !important;
+            // }
+        }
+        .property{
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+        }
+        .building{
+            right: 1% !important;
+            position: absolute;
+            bottom: 0%;
+        }
+    }
+}
+.footer-wrap{
+    position: relative;
+    z-index: 1;
+    // footer-main
+    .footer-widgets-wrapper{
+        padding-top: 280px;
+        margin-bottom: 100px;
+        z-index: 100;
+        .footer-widget{
+            .logo{
+                a{
+    
+                }
+            }
+            .address{
+                ul{
+                    li{
+                        margin: 20px 0px;
+                        display: block;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                       a{
+                        color: #FFFFFF;
+                       }
+                    }
+                }
+            }
+    
+            .social-links{
+                a{
+    
+                    i{
+    
+                    }
+                }
+            }
+        }
+
+        .links-widget{
+            h4{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+                color: #FFFFFF;
+                margin-bottom: 40px;
+            }
+
+            ul{
+                li{
+                    display: block;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 100%;
+                    padding: 7px 0px;
+                    margin: 15px 0px;
+                    a{
+                    color: #FFFFFF;
+                        i{
+                            padding-right: 10px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        .form{
+            h4{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+                color: #FFFFFF;
+                margin-bottom: 40px;
+            }
+            p{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 100%;
+                color: #fff;
+                margin-bottom: 30px;
+            }
+            input{
+                border-radius: 10px;
+                padding: 0px 20px;
+                width: 280px;
+                height: 60px;
+                margin: 10px 0px;
+                &::placeholder{
+                    text-align: center;
+                }
+            }
+            input[type="submit"]{
+                background: #018ABD;
+            }
+        }
+
+        .app{
+            h4{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+                color: #FFFFFF;
+                margin-bottom: 40px;
+            }
+            .app-widget{
+                a{
+                    display: block;
+                    margin: 20px 0px;
+                }
+            }
+            p{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 100%;
+                color: #fff;
+                margin-bottom: 30px;
+                padding-top: 10px;
+            }
+        }
+    }
+
+
+    // footer bottom
+    .footer-bottom{
+        background-color: $theme-color;
+        height: 100px;
+        p{
+            color: $shadow;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        ul{
+            li{
+                a{
+                    color: $shadow;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    border-right: 1px solid #EDF3F7;
+                    padding: 0px 10px;
+                }
+            }
+            .border-none{
+                a{
+                    border-right: none;
+                }
+            }
+        }
+    }
+    &::after{
+        z-index: -11;
+        position: absolute;
+        clear: both;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        left: 0%;
+        top: 0%;
+        background: rgba(2, 41, 75, 0.936);
+    }
+}
