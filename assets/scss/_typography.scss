@@ -2,10 +2,13 @@
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 
+ @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700;800;900&display=swap');
+
 // Font Family Variable with Value
 
 $heading-font: 'Hero New';
 $body-font: 'Hero New';
+$cmr-font:'Commissioner', sans-serif;
 
 // //font-family: "Font Awesome 5 Pro";
 $fa: "Font Awesome 5 Pro";

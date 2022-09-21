@@ -1,0 +1,379 @@
+/* ----------------------------------
+	About Us Section Styles
+ ------------------------------------ */
+
+.properties-wrapper{
+    .single-properties{
+        position: relative;
+        .properties-featured-img{
+            z-index: -1;
+            height: 400px;
+            width: auto;
+            border-radius: 5px;
+        }
+        .house-widget{
+            margin: 10px;
+            border-radius: 5px;
+            z-index: 5;
+            margin-top: -120px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 20px rgba(0, 44, 67, 0.1);
+            .hous-contents{
+                h4{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 100%;
+                    a{
+
+                    }
+                }
+                .location{
+                    margin-bottom: 20px;
+                    a{
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: $text;
+                    }
+                }
+                .home-bad{
+                    margin-bottom: 20px;
+                    a{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #505A62;
+                    }
+                    .bathroom{
+                        
+                    }
+                    .bad-room{
+                       
+                    }
+                    .sq {
+                       
+                    }
+                }
+                .price{
+                    h3{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 100%;
+                        margin-bottom: 0;
+                        span{
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #505A62;
+                        }
+                    }
+                }
+            }
+            .author{
+                .author-dtls{
+                    .author-img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                    p{
+                        font-style: normal;
+                        margin-left: 10px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 100%;
+                    }
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 100%;
+                }
+            }
+        }
+        .latest{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            .sell{
+                background-color: $primary !important;
+            }
+            .sell,.rent{
+                width: auto;
+                border-radius: 999px;
+                background-color: $secondary;
+                p{
+                    font-size: 14px;
+                    color: $white;
+                    padding: 6px 15px;
+                }
+            }
+        }
+    }
+
+    .page-nav-wrap{
+        ul{
+            margin: 0 auto;
+            overflow: hidden;
+            li{
+                overflow: hidden;
+                a{
+                    color: $secondary;
+                    position: relative;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    z-index: 1;
+                    @include transition(0.4s) ;
+                    &:hover{
+                        background-color: $secondary;
+                        color: $white;
+                    }
+                }
+               
+            }
+            li:last-child{
+                a{
+                    color: #97CBDC;
+                    border: 1px solid $shadow;
+                    background: transparent;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        clear: both;
+                        width: 50%;
+                        height: 100%;
+                        background-color: $shadow;
+                        top: 0%;
+                        right: 0%;
+                        z-index: -1;
+                        @include transition(0.4s) ;
+                    }
+                    &:hover{
+                        &::after{
+                            width:100%;
+                        }
+                       
+                        color: $secondary;
+                    }
+                }
+            }
+            li:first-child{
+                a{
+                    color: #97CBDC;
+                    background: transparent;
+                    border: 1px solid $shadow;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        clear: both;
+                        width: 50%;
+                        height: 100%;
+                        background-color: $shadow;
+                        top: 0%;
+                        left: 0%;
+                        z-index: -1;
+                        @include transition(0.4s) ;
+                    }
+                    &:hover{
+                        &::after{
+                            width:100%;
+                        }
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+    .properties-list-widget{
+        border-radius: 6px;
+        @include transition(0.4s);
+        //properties-1
+        .properties-1{
+            .properties-featured-img{
+                height: 250px;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    top: 0;
+                    content: "";
+                    background: rgb(0 22 89);
+                    opacity: 0;
+                    visibility: hidden;
+                    width: 0%;
+                    height: 100%;
+                    right: 0;
+                    border-radius: 5px;
+                    @include transition(0.4s);
+                }
+            }
+            .social-link{
+                a{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: $second-color;
+                }
+            }
+            .house-widget{
+                margin: 0px;
+                margin-top:0px;
+                background: #FFFFFF;
+                box-shadow: none;
+            }
+            .location{
+                margin-bottom: 10px !important;
+            }
+            .home-bad{
+                margin-bottom: 20px !important;
+
+            }
+
+            .price{
+                margin-bottom: 20px ;
+                h3{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 100%;
+                    color: $secondary;
+                    span{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #505A62;
+                    }
+                }
+            }
+        }
+
+        &:hover{
+            box-shadow: 0px 2px 16px rgba(0, 44, 67, 0.1);
+            .properties-featured-img{
+                &::before{
+                    opacity: 0.5;
+                    visibility: visible;
+                    left: 0;
+                    right: auto;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    //property
+    .property-title{
+        h4{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            color: $tertary;
+        }
+    }
+    .property-list{
+        margin: 5px 0px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 4px;
+        z-index: 1;
+        h5{
+            margin-bottom: 0;
+            color: $white;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+
+        }
+        p{
+            color: $white;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 26px;
+        }
+        &::after{
+            z-index: -5;
+            position: absolute;
+            clear: both;
+            content: '';
+            display: block;
+            width:100%;
+            height: 100%;
+            right: 0%;
+            top: 0%;
+            background: rgba(2, 41, 75, 0.6);
+        }
+        .overly,.overly-2{
+            z-index: -9;
+            position: absolute;
+            width: 130px;
+            height: 100%;
+            right: 0%;
+            clip-path: polygon(45% 0, 100% 0, 100% 100%, 0% 100%);
+            top: 0%;
+            background: rgba(2, 41, 75, 0.829);
+        }
+        .overly-2{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 44% 100%);
+        }
+    }
+
+    .agent-wrapper{
+        background-color: $shadow;
+        .agent-img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+        }
+        .agent-content{
+            h4{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 0px;
+               
+            }
+            span{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 21px;
+            }
+        }
+        .chack-mark{
+            top: 60%;
+            left: 90px;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $secondary; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                color: $white;
+                font-size: 16px;
+            }
+        }
+    }
+}

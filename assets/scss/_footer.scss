@@ -65,9 +65,11 @@
         }
     }
 }
+
 .footer-wrap{
     position: relative;
     z-index: 1;
+
     // footer-main
     .footer-widgets-wrapper{
         padding-top: 280px;
@@ -203,6 +205,9 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 20px;
+            a{
+                color: $secondary-2;
+            }
         }
         ul{
             li{
@@ -234,4 +239,28 @@
         top: 0%;
         background: rgba(2, 41, 75, 0.936);
     }
+}
+.style-2{
+
+    .footer-widgets-wrapper{
+        padding-top: 100px !important;
+    }
+    .footer-box{
+        padding-top: 100px;
+        .footer-menu{
+            ul{
+                li{
+                    margin: 0px 15px;
+                    a{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 100%;
+                        color: $shadow;
+                    }
+                }
+            }
+        }
+    }
+    
 }

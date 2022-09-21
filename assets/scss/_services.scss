@@ -1,4 +1,119 @@
 /* ----------------------------------
   Service Section Styles
  ------------------------------------ */
- 
+.service-wrapper{
+  position: relative;
+  .service-box{
+    position: relative;
+    z-index:1;
+    padding: 40px;
+    background-color: $shadow;
+    overflow: hidden;
+    @include transition(0.4s);
+    .icon{
+      margin-bottom: 20px;
+      img:last-child{
+        position: absolute;
+        top: 14%;
+        left: 42%;
+        display: none;
+        @include transition(0.4s);
+      }
+    }
+    .content{
+      h4{
+        font-family: $cmr-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 38px;
+        margin-bottom: 10px;
+      }
+    }
+    &::before{
+      position: absolute;
+      clear: both;
+      display: block;
+      content: '';
+      width: 90px;
+      height: 400px;
+      transform: rotate(-26.95deg);
+      visibility: hidden;
+      opacity: 0;
+      top: -10%;
+      background: rgba(255, 255, 255, 0.06);
+      z-index: -1;  
+      left: 17%; 
+      @include transition(0.4s);
+    }
+    &::after{
+      position: absolute;
+      clear: both;
+      display: block;
+      content: '';
+      visibility: hidden;
+      opacity: 0;
+      width: 90px;
+      height: 400px;
+      transform: rotate(26.95deg);
+      top: -10%;
+      right: 17%;
+      background: rgba(255, 255, 255, 0.06);
+      z-index: -5;
+      @include transition(0.4s);
+    }
+
+
+    &:hover{
+      background-color: $secondary;
+      .icon{
+        img:last-child{
+          display: block;
+        }
+        img:first-child{
+          visibility: hidden;
+          opacity: 0;
+        }
+      }
+      .content{
+        h4{
+          color: $white;
+        }
+        p{
+          color: $white;
+        }
+      }
+      &::before{
+        transform: rotate(26.95deg);
+        top: -15%;
+        background: rgba(255, 255, 255, 0.06);
+        z-index: -5;  
+        left: 17%; 
+        visibility: visible;
+        opacity: 1;
+      }
+      &::after{
+        transform: rotate(-26.95deg);
+        top: -15%;
+        right: 17%;
+        background: rgba(255, 255, 255, 0.06);
+        z-index: -1;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  .asset-top{
+    z-index: -5;
+    position: absolute;
+    top: -1%;
+    right: 0%;
+    transform: rotate(180deg);
+  }
+  .asset-bottom{
+    z-index: -5;
+    position: absolute;
+    bottom: -28%;
+    left: 0%;
+  }
+}

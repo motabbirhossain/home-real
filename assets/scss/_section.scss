@@ -88,6 +88,7 @@
 
 //QuestionAnswer
 .question-wrapper{
+    // overflow-x: hidden;
     position: relative;
     .card{
         border: none;
@@ -191,6 +192,32 @@
         right: -12%;
         z-index: -1;
     }
+    .ractangle{
+        position: absolute;
+        right: 0%;
+        bottom: 0%;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        background: #018ABD;
+        width: 400px;
+        height: 400px;
+        z-index: -5;
+    }
+    .pluse-right{
+        z-index: -5;
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+       .plues-one{
+            margin-bottom: 15px;
+            animation: left-to-right 3s ease-in-out 0.0s infinite;
+        }
+       .plues-two{
+            animation: right-to-left 3s ease-in-out 0.0s infinite;
+        }
+    }
 
 }
 
@@ -274,3 +301,4 @@
         }
     }
 }
+

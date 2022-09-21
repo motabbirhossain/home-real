@@ -77,3 +77,52 @@
   }
 
 }
+
+//service
+.service{
+  position: relative;
+  span{
+    top: 23%;
+    position: absolute;
+    -webkit-text-stroke: 5px rgba(255, 255, 255, 0.05);
+    color:transparent;
+    font-family: $body-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 134px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .shape-head{
+    position: absolute;
+    top: 60%;
+  }
+  .links-widget{
+    a{
+      padding: 0px 10px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 100%;
+      color: $white;
+      @include transition(0.4s) ;
+      &:hover{
+        color: $primary;
+      }
+    }
+    a:first-child{
+      text-decoration: underline;
+      &:hover{
+        color: $white;
+      }
+    }
+    i{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 100%;
+      color: $white;
+    }
+  }
+}

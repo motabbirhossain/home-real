@@ -42,6 +42,41 @@ Author: RRDevs
                 },
             }
         });
+        //partners-carousel-service
+        $(".service-carousel").owlCarousel({
+            items: 6,
+            dots: false,
+            loop: true,
+            autoplayTimeout: 8000,
+            autoplay: true,
+            nav: true,
+            responsive : {
+                // breakpoint from 0 up
+                0 : {
+                    items: 2,                    
+                },
+                // breakpoint from 768 up
+                480 : {
+                    items: 3
+                },
+                // breakpoint from 768 up
+                768 : {
+                    items: 3
+                },
+                // breakpoint from 992 up
+                992 : {
+                    items: 4
+                },
+                // breakpoint from 992 up
+                1191 : {
+                    items: 5
+                },
+                // breakpoint from 992 up
+                1400 : {
+                    items: 6
+                },
+            }
+        });
 
         $(".latest-carousel").owlCarousel({        
             items: 3,     
@@ -82,7 +117,44 @@ Author: RRDevs
                 },
             }
         });
+        //pro-detail-carousel
+        $(".pro-detail-carousel").owlCarousel({        
+            items: 3,     
+            dots: false,
+            loop: true,
+            autoplayTimeout: 8000,
+            autoplay:true,
+        });
 
+        //featured-carousel
+        $(".featured-carousel").owlCarousel({        
+            items: 1,     
+            dots: true,
+            loop: true,
+            autoplayTimeout: 8000,
+            autoplay:true,
+            nav: true,
+            navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+            
+        });
+
+
+        //slick slider
+        $('.item-imgs').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            // fade: true,
+            // asNavFor: '.slider-nav'
+          });
+        //   $('.slider-nav').slick({
+        //     slidesToShow: 3,
+        //     slidesToScroll: 1,
+        //     asNavFor: '.slider-for',
+        //     dots: true,
+        //     centerMode: true,
+        //     focusOnSelect: true
+        //   });
         // const $owlCarousel = $(".agency-slider-active").owlCarousel({        
         //     items: 1,     
         //     dots: true,
