@@ -1538,6 +1538,42 @@ header ul, header li, footer ul, footer li {
             transform: translateX(0px);
   }
 }
+@-webkit-keyframes playVideo {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@keyframes playVideo {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
 /* ------------------------------------------------------------------
    Template Default Button, Input Styles - Value Change with Your's Need
  -------------------------------------------------------------------- */
@@ -3028,6 +3064,99 @@ header #hamburger i {
   font-size: 24px;
   line-height: 36px;
   color: #505A62;
+}
+.property-details-wrapper .property-wedged-video .property-wedged {
+  width: 100%;
+  height: 400px;
+  border-radius: 4px;
+}
+.property-details-wrapper .property-wedged-video .property-wedged .video-play-btn .play-video {
+  width: 60px;
+  height: 60px;
+  background: #018ABD;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: playVideo infinite 3s;
+          animation: playVideo infinite 3s;
+}
+.property-details-wrapper .property-wedged-video .property-wedged .video-play-btn .play-video i {
+  color: #FFF;
+}
+.property-details-wrapper .item-rating-wedged .average-user {
+  border-radius: 6px;
+  background-color: #EDF3F7 !important;
+}
+.property-details-wrapper .item-rating-wedged .average-user p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.property-details-wrapper .item-rating-wedged .average-user h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #02294B;
+  margin-bottom: 20px;
+}
+.property-details-wrapper .item-rating-wedged .average-user h4 span {
+  font-weight: 400;
+  font-size: 15px;
+  color: #505A62;
+}
+.property-details-wrapper .item-rating-wedged .average-user .star a i {
+  color: #018ABD;
+}
+.property-details-wrapper .item-rating-wedged .average-user .star a:nth-child(5) i {
+  color: #C6E2EC !important;
+}
+.property-details-wrapper .item-rating-wedged .rating-star .rating .stars {
+  margin-right: 10px;
+}
+.property-details-wrapper .item-rating-wedged .rating-star .rating .stars i {
+  color: #018ABD;
+}
+.property-details-wrapper .item-rating-wedged .rating-star .rating .stars .add i {
+  color: #C6E2EC;
+}
+.property-details-wrapper .item-rating-wedged .rating-star .rating .bar {
+  width: 55%;
+  height: 5px;
+  border-radius: 999px;
+  background-color: #EDF3F7;
+}
+.property-details-wrapper .item-rating-wedged .rating-star .rating .one, .property-details-wrapper .item-rating-wedged .rating-star .rating .tow, .property-details-wrapper .item-rating-wedged .rating-star .rating .three {
+  position: relative;
+}
+.property-details-wrapper .item-rating-wedged .rating-star .rating .one::before, .property-details-wrapper .item-rating-wedged .rating-star .rating .tow::before, .property-details-wrapper .item-rating-wedged .rating-star .rating .three::before {
+  border-radius: 999px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 70%;
+  height: 100%;
+  content: "";
+  clear: both;
+  background-color: #018ABD;
+}
+.property-details-wrapper .item-rating-wedged .rating-star .rating .tow::before {
+  width: 50%;
+}
+.property-details-wrapper .item-rating-wedged .rating-star .rating .three::before {
+  width: 10%;
+}
+.property-details-wrapper .item-rating-wedged .rating-star .rating p {
+  margin-left: 10px;
 }
 
 /* ----------------------------------

@@ -456,10 +456,6 @@ Author: RRDevs
         // /* =============================================
         //     # Magnific popup init
         //  ===============================================*/
-        // $(".popup-link").magnificPopup({
-        //     type: 'image',
-        //     fixedContentPos: false
-        // });
 
         // $(".popup-gallery").magnificPopup({
         //     type: 'image',
@@ -470,13 +466,13 @@ Author: RRDevs
         //     // other options
         // });
 
-        // $(".popup-video, .popup-vimeo, .popup-gmaps").magnificPopup({
-        //     type: "iframe",
-        //     mainClass: "mfp-fade",
-        //     removalDelay: 160,
-        //     preloader: false,
-        //     fixedContentPos: false
-        // });
+        $(".popup-video, .popup-vimeo, .popup-gmaps").magnificPopup({
+            type: "iframe",
+            mainClass: "mfp-fade",
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false
+        });
         
         // /*==========================
         //    Scroll To Up Init
