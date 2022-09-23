@@ -562,3 +562,11 @@ header{
     }
 
 }
+#scrollUp{
+    background-color: $primary;
+    @include transition(0.4s);
+    &:hover{
+        background-color: $secondary;
+        color: $tertary;
+    }
+}

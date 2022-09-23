@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon";
-    src: url("./flaticon.ttf?e0db7c948563c056415667d6a8ffd5d5") format("truetype"),
-url("./flaticon.woff?e0db7c948563c056415667d6a8ffd5d5") format("woff"),
-url("./flaticon.woff2?e0db7c948563c056415667d6a8ffd5d5") format("woff2"),
-url("./flaticon.eot?e0db7c948563c056415667d6a8ffd5d5#iefix") format("embedded-opentype"),
-url("./flaticon.svg?e0db7c948563c056415667d6a8ffd5d5#flaticon") format("svg");
+    src: url("./flaticon.ttf?bfd971415c1b2d3927a33da777606046") format("truetype"),
+url("./flaticon.woff?bfd971415c1b2d3927a33da777606046") format("woff"),
+url("./flaticon.woff2?bfd971415c1b2d3927a33da777606046") format("woff2"),
+url("./flaticon.eot?bfd971415c1b2d3927a33da777606046#iefix") format("embedded-opentype"),
+url("./flaticon.svg?bfd971415c1b2d3927a33da777606046#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -18,177 +18,75 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-sell:before {
+.flaticon-phone-call:before {
     content: "\f101";
 }
-.flaticon-house:before {
+.flaticon-list:before {
     content: "\f102";
 }
-.flaticon-deal:before {
+.flaticon-menu:before {
     content: "\f103";
 }
-.flaticon-house-1:before {
+.flaticon-heart:before {
     content: "\f104";
 }
-.flaticon-real-estate:before {
+.flaticon-up-and-down-arrows:before {
     content: "\f105";
 }
-.flaticon-handshake:before {
+.flaticon-camera:before {
     content: "\f106";
 }
-.flaticon-contract:before {
+.flaticon-hide:before {
     content: "\f107";
 }
-.flaticon-agreement:before {
+.flaticon-show:before {
     content: "\f108";
 }
-.flaticon-friend:before {
+.flaticon-twitter:before {
     content: "\f109";
 }
-.flaticon-house-2:before {
+.flaticon-twitter-1:before {
     content: "\f10a";
 }
-.flaticon-house-rental:before {
+.flaticon-linkedin:before {
     content: "\f10b";
 }
-.flaticon-swap:before {
+.flaticon-facebook-circular-logo:before {
     content: "\f10c";
 }
-.flaticon-right:before {
+.flaticon-instagram:before {
     content: "\f10d";
 }
-.flaticon-arrows:before {
+.flaticon-envelope:before {
     content: "\f10e";
 }
-.flaticon-arrow:before {
+.flaticon-location:before {
     content: "\f10f";
 }
-.flaticon-exchange:before {
+.flaticon-beds:before {
     content: "\f110";
 }
-.flaticon-right-arrow:before {
+.flaticon-bathtub:before {
     content: "\f111";
 }
-.flaticon-internet:before {
+.flaticon-selection:before {
     content: "\f112";
 }
-.flaticon-globe:before {
+.flaticon-like:before {
     content: "\f113";
 }
-.flaticon-internet-1:before {
+.flaticon-user:before {
     content: "\f114";
 }
-.flaticon-printer:before {
+.flaticon-home:before {
     content: "\f115";
 }
-.flaticon-printing:before {
+.flaticon-pin:before {
     content: "\f116";
 }
-.flaticon-house-3:before {
+.flaticon-add:before {
     content: "\f117";
 }
-.flaticon-bathtub:before {
+.flaticon-person:before {
     content: "\f118";
-}
-.flaticon-hotel-bed:before {
-    content: "\f119";
-}
-.flaticon-vector:before {
-    content: "\f11a";
-}
-.flaticon-location:before {
-    content: "\f11b";
-}
-.flaticon-location-1:before {
-    content: "\f11c";
-}
-.flaticon-placeholder:before {
-    content: "\f11d";
-}
-.flaticon-maps-and-flags:before {
-    content: "\f11e";
-}
-.flaticon-placeholder-1:before {
-    content: "\f11f";
-}
-.flaticon-bed:before {
-    content: "\f120";
-}
-.flaticon-bed-1:before {
-    content: "\f121";
-}
-.flaticon-double-bed:before {
-    content: "\f122";
-}
-.flaticon-checked:before {
-    content: "\f123";
-}
-.flaticon-check-mark:before {
-    content: "\f124";
-}
-.flaticon-check:before {
-    content: "\f125";
-}
-.flaticon-select:before {
-    content: "\f126";
-}
-.flaticon-check-1:before {
-    content: "\f127";
-}
-.flaticon-comment:before {
-    content: "\f128";
-}
-.flaticon-check-mark-1:before {
-    content: "\f129";
-}
-.flaticon-like:before {
-    content: "\f12a";
-}
-.flaticon-list-text:before {
-    content: "\f12b";
-}
-.flaticon-facebook:before {
-    content: "\f12c";
-}
-.flaticon-youtube:before {
-    content: "\f12d";
-}
-.flaticon-twitter:before {
-    content: "\f12e";
-}
-.flaticon-twitter-2:before {
-    content: "\f12f";
-}
-.flaticon-twitter-3:before {
-    content: "\f130";
-}
-.flaticon-linkedin-1:before {
-    content: "\f131";
-}
-.flaticon-linkedin-2:before {
-    content: "\f132";
-}
-.flaticon-linkedin-3:before {
-    content: "\f133";
-}
-.flaticon-instagram:before {
-    content: "\f134";
-}
-.flaticon-instagram-1:before {
-    content: "\f135";
-}
-.flaticon-instagram-2:before {
-    content: "\f136";
-}
-.flaticon-facebook-app-symbol:before {
-    content: "\f137";
-}
-.flaticon-facebook-1:before {
-    content: "\f138";
-}
-.flaticon-facebook-2:before {
-    content: "\f139";
-}
-.flaticon-youtube-2:before {
-    content: "\f13a";
 }

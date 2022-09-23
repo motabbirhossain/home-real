@@ -123,7 +123,25 @@ Author: RRDevs
             dots: false,
             loop: true,
             autoplayTimeout: 8000,
-            autoplay:true,
+            autoplay: true,
+            responsive : {
+                // breakpoint from 0 up
+                0 : {
+                    items: 1                    
+                },
+                // breakpoint from 600 up
+                600: {
+                    items: 1
+                },
+                // breakpoint from 768 up
+                768 : {
+                    items: 2
+                },
+                // breakpoint from 1400 up
+                1400 : {
+                    items: 3
+                },
+            }
         });
 
         //featured-carousel
@@ -178,15 +196,15 @@ Author: RRDevs
         //     const $target = $currentOwlItem.find(".hero-contents");
         // });
 
-        // $(".testimonial-carousel-list").owlCarousel({        
-        //     items: 1,     
-        //     dots: false,
-        //     loop: true,
-        //     autoplayTimeout: 8000,
-        //     autoplay:true,
-        //     nav: true,     
-        //     navText: ['<i class="fal fa-long-arrow-left"></i>', '<i class="fal fa-long-arrow-right"></i>'],
-        // });
+        $(".testimonial-carousel-list").owlCarousel({        
+            items: 1,     
+            dots: false,
+            loop: true,
+            autoplayTimeout: 8000,
+            autoplay:true,
+            nav: true,
+            navText: ['<i class="fal fa-long-arrow-left"></i>', '<i class="fal fa-long-arrow-right"></i>'],
+        });
         
         // $(".brand-carousel-active").owlCarousel({ 
         //     margin: 80,
@@ -477,16 +495,16 @@ Author: RRDevs
         // /*==========================
         //    Scroll To Up Init
         // ============================*/
-        // $.scrollUp({
-        //     scrollName: 'scrollUp', // Element ID
-        //     topDistance: '1110', // Distance from top before showing element (px)
-        //     topSpeed: 2000, // Speed back to top (ms)
-        //     animation: 'slide', // Fade, slide, none
-        //     animationInSpeed: 300, // Animation in speed (ms)
-        //     animationOutSpeed: 300, // Animation out speed (ms)
-        //     scrollText: '<i class="fal fa-angle-up"></i>', // Text for element
-        //     activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-        // });
+        $.scrollUp({
+            scrollName: 'scrollUp', // Element ID
+            topDistance: '1110', // Distance from top before showing element (px)
+            topSpeed: 2000, // Speed back to top (ms)
+            animation: 'slide', // Fade, slide, none
+            animationInSpeed: 300, // Animation in speed (ms)
+            animationOutSpeed: 300, // Animation out speed (ms)
+            scrollText: '<i class="fal fa-angle-up"></i>', // Text for element
+            activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        });
 
         // // Sticky Menu
         // $(window).scroll(function() {
@@ -587,8 +605,8 @@ Author: RRDevs
     // function loader() {
     //     $(window).on('load', function() {
     //         // Animate loader off screen
-    //         $(".preloader").addClass('loaded');                    
-    //         $(".preloader").delay(600).fadeOut();                       
+    //         $(".preloader").addClass('loaded');
+    //         $(".preloader").delay(600).fadeOut();
     //     });
     // }
     // loader();
