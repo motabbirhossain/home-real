@@ -1,0 +1,31 @@
+/* ----------------------------------
+	About Us Section Styles
+ ------------------------------------ */
+
+ .banner-wrapper{
+    .check-rent{
+
+    }
+    .rlh-main-search{
+        .rel-single-select{
+            .single-select{
+                width: 100%;
+                padding: 15px 20px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 21px;
+                font-family: $body-font;
+                color: #505A62;
+                border: 1px solid #DDE8F0;
+                border-radius: 6px;
+                outline: none;
+                option{
+                    border: none;
+                    outline: none;
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+ }
