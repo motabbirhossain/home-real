@@ -16,6 +16,7 @@ $secondary: #018ABD;
 $secondary-2:#97CBDC;
 $tertary:#02294B;
 $text:#505A62;
+$text-2:#212E45;
 $shadow:#EDF3F7;
 
 // Theme Color - Defualt Colors
@@ -32,7 +33,6 @@ $second-color:#00AF92;
 // $div-color:;
 // $hover-color:;
 // $title-color:;
-
 
 @mixin border-radius($r) {
     -webkit-border-radius: $r;

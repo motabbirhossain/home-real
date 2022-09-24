@@ -2,13 +2,18 @@
  Testimonials Section Styles
  ------------------------------------ */
  .testimonials-wrapper{
+    background-color: $shadow;
     .testimonial-carousel-img-wrapper{
         .testimonial-carousel{
-            .item-img{
+            .testimonial{
                 position: relative;
-               
                 height: 450px;
-                .item-imgs{
+                .item-img{
+                    .item{
+                        width: auto;
+                        height: 450px;
+                        border-radius: 4px;
+                    }
                 }
                 .icon{
                     width: 100px;
@@ -33,6 +38,110 @@
                     z-index: -5;
                 }
             }
+        }
+    }
+    .testimonial-carousel-content-wrapper{
+        position: relative;
+        z-index: 1;
+        .item-content{
+            z-index: 5;
+            .icons{
+                margin-bottom: 30px;
+                .star{
+                   a{
+                    i{
+                        color: $tertary;
+                        font-size: 18px;
+                    }
+                   }
+                }
+            }
+            .content{
+                p{
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 32px;
+                    margin-bottom: 20px;
+                }
+                h5{
+                    font-style: normal;
+                    font-size: 13px;
+                    color: $text;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    span{
+                        color: $tertary;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 28px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+        .map{
+            position: absolute;
+            top: 0%;
+            left: -05%;
+            z-index: -2;
+        }
+    }
+    .slick-list{
+        margin: 0px 50px;
+        padding: 0px 0px;
+    }
+    .slick-prev,.slick-next{
+        bottom: -15px; 
+        right: 35%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid #018ABD;
+        overflow: hidden;
+        &::after{
+            position: absolute;
+            content: '';
+            clear: both;
+            width: 50%;
+            height: 100%;
+            background-color: $secondary;
+            top: 0%;
+            right: 0%;
+            z-index: 1;
+            transition: all 0.4s ease-in-out !important;
+        }
+        i{
+            font-size: 20px;
+            color: $primary;
+            z-index: 5;
+            transition: all 0.4s ease-in-out !important;
+        }
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+            &::after{
+                width: 100%;
+            }
+            i{
+                color: $white;
+            }
+        }
+    }
+    .slick-next {
+        left:35% !important;
+        &::after{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            transition: all 0.4s ease-in-out !important;
         }
     }
  }

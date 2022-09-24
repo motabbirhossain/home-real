@@ -7,11 +7,15 @@ FAQ Section Styles
     overflow: hidden;
     .faq-content{
         .accordion{
+            .accordion-body {
+                padding: 20px 0px;
+        }
             .accordion-item{
                 border-bottom: 1px solid #EDF3F7;
                 border-left:  none;
                 border-right: none;
                 border-top: none;
+                background-color: transparent;
                 .accordion-button{
                     padding: 25px 0px;
                     background-color: transparent;
@@ -29,5 +33,13 @@ FAQ Section Styles
         .accordion-button:not(.collapsed){
             box-shadow: none;
         }
+        .accordion-button:not(.collapsed)::after{
+            background-image: url(../img/show.svg);
+            transform: rotate(0deg);
+        }
+        .accordion-button::after{
+            background-image: url(../img/hide.svg);
+        }
+
     }
 }

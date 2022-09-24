@@ -3,6 +3,50 @@
  ------------------------------------ */
 
 .properties-wrapper{
+    .properti-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .showing{
+            p{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 26px;
+                color: $tertary;
+                a{
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 26px;
+                    color: $secondary;
+                }
+            }
+        }
+        .default-menu{
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 45px;
+                height: 45px;
+                border-radius: 4px;
+                margin-left: 10px;
+                border: 1px solid #EDF3F7;
+                @include transition(0.3s) ;
+                &:hover{
+                    background-color: $shadow;
+                }
+                i{
+                    font-size: 20px;
+                    display: inline-block;
+                    color: $secondary;
+                }
+            }
+            .grid-menu{
+                background: $shadow;
+            }
+        }
+    }
     .single-properties{
         position: relative;
         .properties-featured-img{
@@ -24,8 +68,10 @@
                     font-weight: 500;
                     font-size: 20px;
                     line-height: 100%;
-                    a{
-
+                    color: $text-2;
+                    @include  transition(0.4s);
+                    &:hover{
+                        color: $secondary;
                     }
                 }
                 .location{
@@ -36,6 +82,9 @@
                         font-size: 14px;
                         line-height: 20px;
                         color: $text;
+                        i{
+                            color: $secondary;
+                        }
                     }
                 }
                 .home-bad{
@@ -55,6 +104,11 @@
                     }
                     .sq {
                        
+                    }
+                    i{
+                        color: $secondary;
+                        margin-right: 5px;
+                        font-weight: 700;
                     }
                 }
                 .price{
@@ -95,6 +149,7 @@
                     line-height: 100%;
                 }
             }
+
         }
         .latest{
             position: absolute;
@@ -107,11 +162,19 @@
                 width: auto;
                 border-radius: 999px;
                 background-color: $secondary;
-                p{
+                a{
                     font-size: 14px;
                     color: $white;
                     padding: 6px 15px;
                 }
+            }
+        }
+        .img-popup{
+            position: absolute;
+            top: 2%;
+            right: 4%;
+            a{
+                color: $tertary;
             }
         }
     }
@@ -200,6 +263,7 @@
         @include transition(0.4s);
         //properties-1
         .properties-1{
+            position: relative;
             .properties-featured-img{
                 height: 250px;
                 position: relative;
@@ -218,9 +282,12 @@
                 }
             }
             .social-link{
+                position: absolute;
+                top: 0%;
                 a{
                     width: 30px;
                     height: 30px;
+                    // padding: 10px;
                     border-radius: 50%;
                     background-color: $second-color;
                 }

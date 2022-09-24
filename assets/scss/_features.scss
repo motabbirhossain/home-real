@@ -9,10 +9,10 @@
             width: auto;
             border-radius: 999px;
             background-color: $secondary;
-            p{
-                font-size: 14px;
-                color: $white;
-                padding: 6px 15px;
+            a{
+                font-size: 14px !important;
+                color: $white !important;
+                padding: 6px 15px !important;
             }
         }
     }

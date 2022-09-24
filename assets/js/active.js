@@ -158,13 +158,31 @@ Author: RRDevs
 
 
         //slick slider
-        $('.item-imgs').slick({
+        $('.item-img').slick({
+            dots: false,
+            infinite: false,
+            speed: 500,
+            asNavFor: '.content-carousel',
+            fade: true,
+            prevArrow: false,
+            nextArrow: false
+        });
+        
+        $('.content-carousel').slick({
+            dots: false,
+            speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false,
-            // fade: true,
-            // asNavFor: '.slider-nav'
+            asNavFor: '.item-img',
+            centerMode: true,
+            focusOnSelect: true,
+            prevArrow: '<div class="slick-prev"><i class="fal fa-long-arrow-right" aria-hidden="true"></i></div>',
+            nextArrow: '<div class="slick-next"><i class="fal fa-long-arrow-left" aria-hidden="true"></i></div>'
           });
+
+
+
+        
         //   $('.slider-nav').slick({
         //     slidesToShow: 3,
         //     slidesToScroll: 1,
@@ -491,7 +509,13 @@ Author: RRDevs
             preloader: false,
             fixedContentPos: false
         });
-        
+        $('.img-popup').magnificPopup({
+            type: 'image',
+            delegate: 'a',
+            gallery: {
+                enabled:true
+            }
+          });
         // /*==========================
         //    Scroll To Up Init
         // ============================*/
@@ -542,23 +566,23 @@ Author: RRDevs
         // });
 
 
-        // $('#hamburger').on('click', function() {            
-        //     $('.mobile-nav').addClass('show');
-        //     $('.overlay').addClass('active');
-        // });
+        $('#hamburger').on('click', function() {            
+            $('.mobile-nav').addClass('show');
+            $('.overlay').addClass('active');
+        });
 
-        // $('.close-nav').on('click', function() {            
-        //     $('.mobile-nav').removeClass('show');            
-        //     $('.overlay').removeClass('active');          
-        // });
+        $('.close-nav').on('click', function() {            
+            $('.mobile-nav').removeClass('show');            
+            $('.overlay').removeClass('active');          
+        });
 
-        // $(".overlay").on("click", function () {
-        //     $(".mobile-nav").removeClass("show");
-        //     $('.overlay').removeClass('active');
-        // });
+        $(".overlay").on("click", function () {
+            $(".mobile-nav").removeClass("show");
+            $('.overlay').removeClass('active');
+        });
 
-        // //metisMenu
-        // $("#mobile-menu").metisMenu();
+        //metisMenu
+        $("#mobile-menu").metisMenu();
 
         // //WOW
         // new WOW().init();

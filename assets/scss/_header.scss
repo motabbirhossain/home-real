@@ -14,6 +14,17 @@ header{
                 padding: 0px 10px;
                 display: inline-block;
                 text-align: left;
+                a{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color:$text;
+                    i{
+                        color: #018ABD;
+                        padding-right: 10px;
+                    }
+                }
             }
         }
 
@@ -72,15 +83,39 @@ header{
                     i{
                         font-size: 16px;
                         padding: 5px;
-                        color: red;
+                        color: $secondary-2;
+                        @include  transition(0.4s) ;
                     }
-                    .twitter{
-                        background-color: transparent;
-                        color: cornflowerblue;
+                    &:hover{
+                        i{
+                            color: $secondary;
+                        }
                     }
                 }
             }
         }
+    }
+    //2
+    .header-top-bar-2{
+        .language{
+            border-right: none !important;
+            border-left: 1.5px solid rgba(1, 138, 189, 0.1);
+        }
+        .time-wedged{
+            padding: 0px 20px;
+            span{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 21px;
+                color: $text;
+                i{
+                    color: $secondary;
+                    margin-right: 10px;
+                }
+            }
+        }
+
     }
 
     /* ----main header------ */
@@ -148,6 +183,7 @@ header{
         .right-elements{
             .call-action{
                 a{
+                    position: relative;
                     width: 40px;
                     height: 40px;
                     display: flex;
@@ -159,14 +195,62 @@ header{
                     font-weight: 400;
                     margin: 0px 10px;
                     color:$secondary-2 ;
+                   
+                }
+                .btn-head{
+                    position: relative;
+                    i{
+                        color: $secondary;
+                        @include transition(0.6s);
+                    }
+                    span{
+                        position: absolute;
+                        top: -20%;
+                        right: -5%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: $secondary;
+                        color: $white;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 10px;
+                        line-height: 100%;
+                        @include transition(0.6s);
+                    }
+                    &::after{
+                        @include absolute(-1);
+                        background-color:$secondary;
+                        border-radius: 1000px;
+                        visibility: hidden;
+                        opacity: 0;
+                        @include transition(0.4s);
+                    }
+                    &:hover{
+                        i{
+                            color: $white;
+                        }
+                        span{
+                            background-color: $shadow;
+                            color: $secondary;
+                        }
+                        &::after{
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
                 }
                 a:first-child{
                     text-transform: capitalize;
                     i{
                         padding-right: 7px;
+                        margin-left: 0px;
                     }
                     color:$white ;
-                    width: 160px;
+                    width: 155px;
                     background: $secondary;
                     margin-left: 0px;
                 }
@@ -221,6 +305,51 @@ header{
         }
     }
 
+    //2
+    .main-header-wrapper-2{
+        .right-elements{
+            .call-action{
+                a{
+                    position: relative;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 1000px;
+                    background: rgba(2, 110, 120, 0.1);
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin: 0px 10px;
+                    color:$secondary-2 ;
+                   
+                } 
+                a:first-child{
+                    text-transform: capitalize;
+                    i{
+                        padding-right: 0px;
+                        margin-left: 0px;
+                    }
+                    color:$white ;
+                    width: 40px;
+                    background: rgba(2, 110, 120, 0.1);
+                    margin-left: 0px;
+                }
+                a:last-child{
+                    text-transform: capitalize;
+                    i{
+                        padding-right: 7px;
+                        margin-left: 0px;
+                    }
+                    color:$white ;
+                    width: 155px;
+                    background: $secondary;
+                    margin-left: 0px;
+                }
+                
+            }
+        }
+    }
     /* ----active------ */
     .active-menu{
         position: relative;
@@ -294,7 +423,10 @@ header{
         margin: 0;
         padding: 0;
         list-style: none;
-        background-color: transparent
+        background-color: transparent;
+    }
+    .sidebar-nav ul li{
+        display: block !important;
     }
     .sidebar-nav .metismenu {
         display: flex;
@@ -458,13 +590,65 @@ header{
             margin: 0px 10px;
             color:$secondary-2 ;
         }
+        @media (max-width: 991px){
+            .theme-btn {
+                padding: 0px !important; 
+        }
+        }
+
+        .btn-head{
+            position: relative;
+            i{
+                color: $secondary;
+                @include transition(0.6s);
+            }
+            span{
+                position: absolute;
+                top: -20%;
+                right: -5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: $secondary;
+                color: $white;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 100%;
+                @include transition(0.6s);
+            }
+            &::after{
+                @include absolute(-1);
+                background-color:$secondary;
+                border-radius: 1000px;
+                visibility: hidden;
+                opacity: 0;
+                @include transition(0.4s);
+            }
+            &:hover{
+                i{
+                    color: $white;
+                }
+                span{
+                    background-color: $shadow;
+                    color: $secondary;
+                }
+                &::after{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
         a:last-child{
             text-transform: capitalize;
             i{
                 padding-right: 7px;
             }
             color:$white ;
-            width: 160px;
+            width: 130px;
             background: $secondary;
             margin-left: 0px;
         }
@@ -486,7 +670,7 @@ header{
     visibility: hidden;
     right: -30%;
     transition: all .5s ease-in-out;
-    // background-color: $second-color;
+    background-color: $tertary;
     box-shadow: 0 13px 35px -12px rgba(35,35,35,.15);
 
     &.show {
@@ -501,7 +685,6 @@ header{
     }
 
     .theme-btn {
-        // background-color: $theme-color;
         color: #fff;
     }
 
@@ -534,7 +717,7 @@ header{
         top: 20px;
 
         &:hover {
-            // color: $theme-color;
+            color: $tertary;
         }
     }
 
@@ -545,7 +728,7 @@ header{
     .offset-menu-social-icon {
         a {
             font-size: 14px;
-            // background: $theme-color;
+            background: $tertary;
             display: inline-block;
             border-radius: 50%;
             width: 40px;
@@ -556,7 +739,7 @@ header{
             font-weight: 400;
 
             &:hover {
-                // background: $second-color;
+                background: $secondary;
             }
         }
     }
