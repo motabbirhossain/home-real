@@ -549,3 +549,84 @@
         }
     }
 }
+.feature-wrapper{
+    z-index: -1;
+    .properties-list-widget{
+        background-color: $white;
+        .single-properties{
+            .properties-featured-img{
+                z-index: 1;
+            }
+            .latest{
+                z-index: 4;
+                @include  transition(0.4s);
+            }
+
+            .social-link{
+                z-index: 4;
+                display: flex;
+                align-items: flex-end;
+                right: -20%;
+                bottom: 20px !important;
+                opacity: 0;
+                visibility: hidden;
+                @include  transition(0.4s);
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0px 4px;
+                    background-color: $theme-color-2 !important;
+                    color: $white;
+                    @include  transition(0.4s);
+                    i{
+                        display: inline;
+                    }
+                    &:hover{
+                        background-color: $secondary !important;
+                        color: $tertary;
+                    }
+                }
+            }
+            .hous-contents{
+                h3{
+                    color: $theme-color-2 !important;
+                   
+                }
+                i{
+                    color: $theme-color-2 !important;
+                }
+            }
+        }
+        &:hover{
+            .social-link{
+                opacity: 1;
+                visibility: visible;
+                right: 20px;
+
+            }
+           .latest{
+                .rent{
+                    a{
+                        background-color: $theme-color-2;
+                        border-radius: 999px
+                    }
+                }
+           }
+        }
+    }
+    .btn-primary{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        padding:15px 30px;
+        background: #FF666B;
+        box-shadow: 0px 1px 2px rgba(198, 228, 246, 0.05);
+        border-radius: 999px;
+        @include  transition(0.4s);
+        &:hover{
+            background-color: $secondary;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 /* ----------------------------------
-	About Us Section Styles
+	Piece Section Styles
  ------------------------------------ */
 
 .properties-wrapper{
@@ -96,13 +96,6 @@
                         line-height: 20px;
                         color: #505A62;
                     }
-                    .bathroom{
-                        
-                    }
-                    .bad-room{
-                       
-                    }
-                    .sq {
                        
                     }
                     i{
@@ -283,13 +276,26 @@
             }
             .social-link{
                 position: absolute;
-                top: 0%;
+                bottom: 20px;
+                right: -20%;
+                visibility: hidden;
+                opacity: 0;
+                @include transition(0.4s);
                 a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 30px;
                     height: 30px;
-                    // padding: 10px;
+                    margin: 4px;
                     border-radius: 50%;
-                    background-color: $second-color;
+                    background-color: $secondary;
+                    color: $white;
+                    @include transition(0.4s);
+                    &:hover{
+                        background-color: $tertary !important;
+                        color: $white;
+                    }
                 }
             }
             .house-widget{
@@ -334,6 +340,14 @@
                     left: 0;
                     right: auto;
                     width: 100%;
+                }
+                
+            }
+            .properties-1{
+                .social-link{
+                    right: 20px;
+                    visibility: visible;
+                    opacity: 1;
                 }
             }
         }
@@ -440,6 +454,72 @@
             i{
                 color: $white;
                 font-size: 16px;
+            }
+        }
+    }
+.price-wrapper{
+    .section-title{
+
+    }
+    .package-widget{
+        background-color: $shadow;
+        .package-title{
+            padding: 25px 30px;
+            h5{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                margin-bottom: 0px;
+            }
+            span{
+
+            }
+        }
+        .package-range{
+            padding: 25px 30px;
+            background-color: $primary;
+            p{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px !important;
+                color: $white;
+                margin-bottom: 0px;
+                span{
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 60px;
+                }
+            }
+        }
+        .package-features{
+            padding:0px 30px;
+            padding-top: 30px;
+            ul{
+                li{
+                    display: block;
+                    padding: 10px 0px;
+                }
+            }
+        }
+        .price-btn{
+            padding: 30px 20px;
+
+            a{
+                border: 1.5px solid #97CBDC;
+                padding: 15px 0px;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 21px;
+                color: $secondary;
+            }
+            .btn-primary{
+                &:hover{
+                    color: $white;
+                    background-color: $secondary;
+                }
             }
         }
     }

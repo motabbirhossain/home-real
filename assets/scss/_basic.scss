@@ -119,7 +119,9 @@ li {
     list-style: none;
     position: relative;
 }
-
+i{
+    line-height: 0 !important;
+}
 a,
 button {
     position: relative;

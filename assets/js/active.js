@@ -155,33 +155,6 @@ Author: RRDevs
             navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
             
         });
-
-
-        //slick slider
-        $('.item-img').slick({
-            dots: false,
-            infinite: false,
-            speed: 500,
-            asNavFor: '.content-carousel',
-            fade: true,
-            prevArrow: false,
-            nextArrow: false
-        });
-        
-        $('.content-carousel').slick({
-            dots: false,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            asNavFor: '.item-img',
-            centerMode: true,
-            focusOnSelect: true,
-            prevArrow: '<div class="slick-prev"><i class="fal fa-long-arrow-right" aria-hidden="true"></i></div>',
-            nextArrow: '<div class="slick-next"><i class="fal fa-long-arrow-left" aria-hidden="true"></i></div>'
-          });
-
-
-
         
         //   $('.slider-nav').slick({
         //     slidesToShow: 3,
@@ -228,11 +201,11 @@ Author: RRDevs
         //     margin: 80,
         //     loop: true,
         //     autoplayTimeout: 5000,
-        //     autoplay:true,                                                                          
+        //     autoplay:true,
         //     responsive : {
         //         // breakpoint from 0 up
         //         0 : {
-        //             items: 2,                    
+        //             items: 2,
         //         },
         //         // breakpoint from 768 up
         //         480 : {
@@ -254,15 +227,15 @@ Author: RRDevs
         // });
 
         // //05
-        // $(".brand-carousel-active-2").owlCarousel({ 
+        // $(".brand-carousel-active-2").owlCarousel({
         //     margin: 80,
         //     loop: true,
         //     autoplayTimeout: 5000,
-        //     autoplay:true,                                                                          
+        //     autoplay:true,
         //     responsive : {
         //         // breakpoint from 0 up
         //         0 : {
-        //             items: 2,                    
+        //             items: 2,
         //         },
         //         // breakpoint from 768 up
         //         480 : {
@@ -283,15 +256,15 @@ Author: RRDevs
         //     }
         // });
 
-        // $(".brand-carousel-2").owlCarousel({ 
+        // $(".brand-carousel-2").owlCarousel({
         //     margin: 50,
         //     loop: true,
         //     autoplayTimeout: 5000,
-        //     autoplay:true,                                                                          
+        //     autoplay:true,
         //     responsive : {
         //         // breakpoint from 0 up
         //         0 : {
-        //             items: 2,                    
+        //             items: 2,
         //         },
         //         // breakpoint from 768 up
         //         480 : {
@@ -312,15 +285,15 @@ Author: RRDevs
         //     }
         // });
 
-        // $(".global-carousel").owlCarousel({ 
+        // $(".global-carousel").owlCarousel({
         //     margin: 80,
         //     loop: true,
         //     autoplayTimeout: 5000,
-        //     autoplay:true,                                                                          
+        //     autoplay:true,
         //     responsive : {
         //         // breakpoint from 0 up
         //         0 : {
-        //             items: 2,                    
+        //             items: 2,
         //         },
         //         // breakpoint from 768 up
         //         480 : {
@@ -338,16 +311,16 @@ Author: RRDevs
         //     }
         // });
 
-        // $(".project-showcase-carousel").owlCarousel({ 
+        // $(".project-showcase-carousel").owlCarousel({
         //     margin: 30,
         //     loop: true,
         //     center: true,
         //     autoplayTimeout: 5000,
-        //     autoplay:true,                                                                          
+        //     autoplay:true,
         //     responsive : {
         //         // breakpoint from 0 up
         //         0 : {
-        //             items: 1,                    
+        //             items: 1,
         //         },
         //         // breakpoint from 768 up
         //         480 : {
@@ -368,16 +341,16 @@ Author: RRDevs
         //     }
         // });
 
-        // $(".portfolio-showcase-carousel-active").owlCarousel({ 
+        // $(".portfolio-showcase-carousel-active").owlCarousel({
         //     margin: 30,
         //     loop: true,
         //     autoplayTimeout: 5000,
         //     autoplay:true,
-        //     dots: true,                                                                          
+        //     dots: true,
         //     responsive : {
         //         // breakpoint from 0 up
         //         0 : {
-        //             items: 1,                    
+        //             items: 1,
         //         },
         //         // breakpoint from 768 up
         //         480 : {
@@ -402,17 +375,17 @@ Author: RRDevs
         //     }
         // });
         
-        // $(".project-carousel-card-active").owlCarousel({ 
+        // $(".project-carousel-card-active").owlCarousel({
         //     margin: 30,
         //     loop: true,
-        //     nav: true,           
+        //     nav: true,
         //     navText: ['<i class="fal fa-long-arrow-left"></i>', '<i class="fal fa-long-arrow-right"></i>'],
         //     autoplayTimeout: 6000,
-        //     autoplay:true,                                                                          
+        //     autoplay:true,
         //     responsive : {
         //         // breakpoint from 0 up
         //         0 : {
-        //             items: 1,                    
+        //             items: 1,
         //         },
         //         // breakpoint from 768 up
         //         768 : {
@@ -429,16 +402,16 @@ Author: RRDevs
         //     }
         // });
 
-        // $(".portfolio-carousel-active").owlCarousel({ 
+        // $(".portfolio-carousel-active").owlCarousel({
         //     loop: true,
         //     autoplayTimeout: 8000,
         //     autoplay:true,
-        //     center: true,                                                                      
+        //     center: true,
         //     responsive : {
         //         // breakpoint from 0 up
         //         0 : {
         //             items: 2,
-        //             margin: 10,                
+        //             margin: 10,
         //         },
         //         // breakpoint from 768 up
         //         768 : {
@@ -448,46 +421,51 @@ Author: RRDevs
         //         // breakpoint from 992 up
         //         992 : {
         //             items: 3,
-        //             margin: 30,  
+        //             margin: 30,
         //         },
 
         //         1400 : {
         //             items: 4,
         //             margin: 30,
-        //             center: false, 
+        //             center: false,
         //         }
         //     }
         // });
 
-        // //5
-        // $(".owl-carousel").owlCarousel({ 
-        //     items: 1,
-        //     loop: true,
-        //     autoplayTimeout: 8000,
-        //     autoplay:true,
-        //     center: true,                                                                      
-        // });
+        /* =============================================
+            # slick slider init
+         ===============================================*/
+        $('.item-img').slick({
+            dots: false,
+            infinite: false,
+            speed: 500,
+            asNavFor: '.content-carousel',
+            fade: true,
+            prevArrow: false,
+            nextArrow: false
+        });
+        $('.content-carousel').slick({
+            dots: false,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: '.item-img',
+            centerMode: true,
+            focusOnSelect: true,
+            prevArrow: '<div class="slick-prev"><i class="fal fa-long-arrow-right" aria-hidden="true"></i></div>',
+            nextArrow: '<div class="slick-next"><i class="fal fa-long-arrow-left" aria-hidden="true"></i></div>'
+        });
 
-
-        // $(".testimonial-carousel-active").owlCarousel({        
-        //     items: 1,     
-        //     dots: false,
-        //     loop: true,
-        //     autoplayTimeout: 8000,
-        //     autoplay:true,
-        //     nav: true,           
-        //     navText: ['<i class="fal fa-long-arrow-down"></i>', '<i class="fal fa-long-arrow-up"></i>'],
-        // });
-
-        // $(".service-gallery").owlCarousel({        
-        //     items: 1,     
-        //     dots: true,
-        //     autoplayTimeout: 8000,
-        //     autoplay:true,
-        //     nav: true,          
-        //     navText: ['<i class="fal fa-long-arrow-left"></i>', '<i class="fal fa-long-arrow-right"></i>'],
-        // });
-
+        //customer-item
+        $('.customer-carousel').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            prevArrow: false,
+            nextArrow:false
+        });
 
         // /* =============================================
         //     # Magnific popup init
@@ -516,9 +494,28 @@ Author: RRDevs
                 enabled:true
             }
           });
-        // /*==========================
-        //    Scroll To Up Init
-        // ============================*/
+
+        /*==========================
+          filtering Init
+        ============================*/
+
+        // // init Isotope
+        // var $grid = $('.filter-item').isotope({
+        // // options
+        // });
+        // // filter items on button click
+        // $('.filter-button-widget').on( 'click', 'button', function() {
+        //     var filterValue = $(this).attr('data-filter');
+        //     $grid.isotope({ filter: filterValue });
+        // });
+        // var catButton = '.filter-button-widget button';
+        // $(catButton).on('click', function(){
+        //     $(catButton).removeClass('active');
+        //     $(this).addClass('active');
+        // });
+        /*==========================
+           Scroll To Up Init
+        ============================*/
         $.scrollUp({
             scrollName: 'scrollUp', // Element ID
             topDistance: '1110', // Distance from top before showing element (px)

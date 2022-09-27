@@ -85,14 +85,38 @@
         }
     }
 }
-
+.section-title-2 {
+    h6{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 26px;
+        color: $theme-color-2;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .line-element{
+        position: absolute;
+        top: 10%;
+        left: 44%;
+        @media (max-width:1000px ){
+            left: 46%;
+        }
+        @media (max-width:600px ){
+            left: 44%;
+        }
+        @media (max-width:425px ){
+            left: 40%;
+        }
+    }
+}
 //QuestionAnswer
 .question-wrapper{
-    // overflow-x: hidden;
     position: relative;
     .card{
         border: none;
-        margin: 25px 0px;
+        margin-top: 20px;
     }
     .one{
         background-color: #DDE8F0;

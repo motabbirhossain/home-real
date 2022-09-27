@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?bfd971415c1b2d3927a33da777606046") format("truetype"),
-url("./flaticon.woff?bfd971415c1b2d3927a33da777606046") format("woff"),
-url("./flaticon.woff2?bfd971415c1b2d3927a33da777606046") format("woff2"),
-url("./flaticon.eot?bfd971415c1b2d3927a33da777606046#iefix") format("embedded-opentype"),
-url("./flaticon.svg?bfd971415c1b2d3927a33da777606046#flaticon") format("svg");
+    src: url("./flaticon.ttf?d93a672550cbf9104a4812d60b344747") format("truetype"),
+url("./flaticon.woff?d93a672550cbf9104a4812d60b344747") format("woff"),
+url("./flaticon.woff2?d93a672550cbf9104a4812d60b344747") format("woff2"),
+url("./flaticon.eot?d93a672550cbf9104a4812d60b344747#iefix") format("embedded-opentype"),
+url("./flaticon.svg?d93a672550cbf9104a4812d60b344747#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -45,6 +45,9 @@ $flaticon-map: (
     "pin": "\f116",
     "add": "\f117",
     "person": "\f118",
+    "transformation": "\f119",
+    "check-mark": "\f11a",
+    "internet": "\f11b",
 );
 
 .flaticon-phone-call:before {
@@ -118,4 +121,13 @@ $flaticon-map: (
 }
 .flaticon-person:before {
     content: map-get($flaticon-map, "person");
+}
+.flaticon-transformation:before {
+    content: map-get($flaticon-map, "transformation");
+}
+.flaticon-check-mark:before {
+    content: map-get($flaticon-map, "check-mark");
+}
+.flaticon-internet:before {
+    content: map-get($flaticon-map, "internet");
 }

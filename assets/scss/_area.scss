@@ -117,3 +117,42 @@
         z-index: -1;
     }
 }
+
+.area-wrapper{
+    .area-container{
+        padding-left: 0px;
+        padding-right: 0px;
+        .area-future{
+            width: auto;
+            .card-body{
+                a{
+                    color: $theme-color-2;
+                    position: relative;
+                    @include transition(0.4s);
+                    &::after{
+                        position: absolute;
+                        content: '\f178';
+                        font-family: $fa;
+                        font-weight: 500;
+                        top: 0;
+                        left: 110%;
+                        visibility: hidden;
+                        opacity: 0;
+                        @include transition(0.4s);
+                    }
+                    &:hover{
+                        color: $theme-color-2;
+                        i{
+                            visibility: hidden;
+                            opacity: 0;
+                        }
+                        &::after{
+                            visibility: visible;
+                            opacity: 1;
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}

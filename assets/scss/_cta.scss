@@ -1,0 +1,132 @@
+/* ----------------------------------
+	login Section Styles
+ ------------------------------------ */
+
+ .login-wrapper{
+    .section-title{
+        h2{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 48px;
+            color: $secondary;
+            span{
+                color: $tertary;
+                font-weight: 600;
+            }
+        }
+    }
+    .login-widget{
+        margin: 0 auto;
+        max-width: 400px;
+        form{
+            input[type="email"], input[type="text"], input[type="submit"]{
+                background: #EDF3F7;
+                height: 57px;
+                width: 100%;
+                border: none;
+                margin: 15px 0px;
+
+            }
+            .passaword{
+                input{
+                    border-top-left-radius: 4px;
+                    border-top-right-radius: none;
+                    border-bottom-right-radius: none;
+                    border-bottom-left-radius: 4px;
+                }
+                .input-group-append{
+                    border-top-left-radius: none;
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                    border-bottom-left-radius: none;
+                   span{
+                    height: 57px;
+                    background: #EDF3F7;
+                    border: none;
+                   
+                   }
+                }
+            }
+            input[type="email"], input[type="text"], input[type="submit"]:focus{
+            }
+            label.label {
+                margin: 0px 25px;
+            }
+            input[type="radio"]{
+               
+            }
+            .chack-box{
+                margin: 15px 0px;
+                a{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 26px;
+                    color: $secondary;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                label{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 26px;
+                    color: $secondary;
+                    cursor: pointer;
+                    input{
+                        height: 18px;
+                        width: 18px;
+                        color: $white;
+                    }
+                }
+            }
+            .divider{
+                position: relative;
+                span{
+                    z-index: 5;
+                }
+                &::after{
+                    z-index: -1;
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #EDF3F7;
+                }
+            }
+            button{
+                width: 100%;
+                height: 45px;
+                border: 1px solid #EDF3F7;
+                box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                border-radius: 999px;
+                background: $primary;
+                i{
+                    font-size: 22px;
+                    display: inline;
+                }
+               
+            }
+            .google{
+                background-color: transparent;
+                color:  #344054 !important;
+            }
+        }
+        p{
+            margin-top: 30px;
+            a{
+                width: 100px;
+                height: 2px;
+                color: $secondary;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+ }

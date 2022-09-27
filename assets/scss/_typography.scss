@@ -93,7 +93,7 @@ a {
     cursor: pointer;
     font-size: 16px;
     line-height: 22px;
-    @include transition(.3s);
+    @include transition(.4s);
     color: $text;
 }
 
