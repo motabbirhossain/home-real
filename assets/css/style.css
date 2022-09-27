@@ -4808,6 +4808,9 @@ header #hamburger i {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
+.properties-list-widget .properties-1 .properties-effect::before {
+  display: none;
+}
 .properties-list-widget .properties-1 .social-link {
   position: absolute;
   bottom: 20px;
@@ -4839,6 +4842,19 @@ header #hamburger i {
 .properties-list-widget .properties-1 .social-link a:hover {
   background-color: #02294B !important;
   color: #FFF;
+}
+.properties-list-widget .properties-1 .social-link-2 {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  visibility: visible;
+  opacity: 1;
+}
+.properties-list-widget .properties-1 .social-link-2 a {
+  background-color: #97CBDC;
+}
+.properties-list-widget .properties-1 .social-link-2 a:hover {
+  background-color: #018ABD;
 }
 .properties-list-widget .properties-1 .house-widget {
   margin: 0px;
