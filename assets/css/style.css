@@ -5,7 +5,7 @@ Author URI: https://themeforest.net/user/rrdevs
 Description: Multipurpose Bootstrap 5 Template
 Version: 1.0.0
 */
-@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700;800;900&family=Lato:wght@400;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5024,6 +5024,18 @@ header #hamburger i {
   line-height: 36px;
   margin-bottom: 0px;
 }
+.price-wrapper .package-widget .package-title span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  color: #FFF;
+  padding: 8px 14px;
+  background: #018ABD;
+  -webkit-box-shadow: 0px 1px 2px rgba(198, 228, 246, 0.05);
+          box-shadow: 0px 1px 2px rgba(198, 228, 246, 0.05);
+  border-radius: 999px;
+}
 .price-wrapper .package-widget .package-range {
   padding: 25px 30px;
   background-color: #004581;
@@ -5061,6 +5073,10 @@ header #hamburger i {
   line-height: 21px;
   color: #018ABD;
 }
+.price-wrapper .package-widget .price-btn .active-price {
+  color: #FFF;
+  background-color: #018ABD;
+}
 .price-wrapper .package-widget .price-btn .btn-primary:hover {
   color: #FFF;
   background-color: #018ABD;
@@ -5084,32 +5100,64 @@ header #hamburger i {
   margin: 0 auto;
   max-width: 400px;
 }
-.login-wrapper .login-widget form input[type=email], .login-wrapper .login-widget form input[type=text], .login-wrapper .login-widget form input[type=submit] {
+.login-wrapper .login-widget form input[type=email], .login-wrapper .login-widget form input[type=submit], .login-wrapper .login-widget form input[name=Password], .login-wrapper .login-widget form input[name=name] {
+  padding: 10px 15px;
   background: #EDF3F7;
   height: 57px;
   width: 100%;
   border: none;
   margin: 15px 0px;
 }
-.login-wrapper .login-widget form .passaword input {
+.login-wrapper .login-widget form input[type=email], .login-wrapper .login-widget form input[type=submit], .login-wrapper .login-widget form input[name=name] {
+  border-radius: 4px;
+}
+.login-wrapper .login-widget form input[name=Password] {
   border-top-left-radius: 4px;
-  border-top-right-radius: none;
-  border-bottom-right-radius: none;
   border-bottom-left-radius: 4px;
 }
-.login-wrapper .login-widget form .passaword .input-group-append {
+.login-wrapper .login-widget form .input-group-append {
   border-top-left-radius: none;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: none;
 }
-.login-wrapper .login-widget form .passaword .input-group-append span {
+.login-wrapper .login-widget form .input-group-append span {
   height: 57px;
   background: #EDF3F7;
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(33, 37, 41);
+  text-align: center;
+  white-space: nowrap;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.login-wrapper .login-widget form .input-group-append span i {
+  cursor: pointer;
 }
 .login-wrapper .login-widget form label.label {
   margin: 0px 25px;
+}
+.login-wrapper .login-widget form label.label span {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-left: 10px;
+}
+.login-wrapper .login-widget form input[type=radio] {
+  width: 20px;
+  height: 20px;
 }
 .login-wrapper .login-widget form .chack-box {
   margin: 15px 0px;
@@ -5156,21 +5204,39 @@ header #hamburger i {
   background-color: #EDF3F7;
 }
 .login-wrapper .login-widget form button {
+  margin-top: 15px;
   width: 100%;
   height: 45px;
   border: 1px solid #EDF3F7;
   -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
           box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 999px;
-  background: #004581;
+  background: #1877F2;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.login-wrapper .login-widget form button img {
+  margin-right: 10px;
 }
 .login-wrapper .login-widget form button i {
-  font-size: 22px;
-  display: inline;
+  font-size: 20px;
+  margin-right: 10px;
+  line-height: 0;
+}
+.login-wrapper .login-widget form button:hover {
+  background-color: #004581;
+  color: #FFF !important;
 }
 .login-wrapper .login-widget form .google {
   background-color: transparent;
   color: #344054 !important;
+}
+.login-wrapper .login-widget form .google:hover {
+  background-color: #004581;
+  color: #FFF !important;
+}
+.login-wrapper .login-widget form .twitter {
+  background-color: #1DA1F2;
 }
 .login-wrapper .login-widget p {
   margin-top: 30px;

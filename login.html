@@ -226,8 +226,9 @@
         </div>
     </section>
     <!-- login -->
-    <div class="login-wrapper section-padding">
+    <section class="login-wrapper section-padding">
         <div class="container">
+
             <div class="row">
                 <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 text-center col-12">
                     <div class="section-title">
@@ -235,36 +236,44 @@
                     </div>
                 </div>
             </div>
+            
             <div class="row">
                 <div class="col-12">
                     <div class="login-widget text-center">
                         <form action="#">
                             <div class="my-3">
                                 <label class="label" for="Sign">
-                                    <input type="radio" name="radio" id="Sign">
-                                    Sign In
+                                   <div class="d-flex justify-content-center align-items-center">
+                                        <input type="radio" name="radio" id="Sign">
+                                        <span> Sign In</span>
+                                   </div>
                                 </label>
                                 <label class="label" for="Account">
-                                    <input type="radio" name="radio" id="Account">
-                                    Create Account
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <input type="radio" name="radio" id="Account">
+                                        <span>Create Account</span>
+                                   </div>
+                                    
                                 </label>
                             </div>
                             <div class="my-3">
                                 <input type="email" name="email"  placeholder="Email">
                             </div>
-                            <div class="my-3 d-flex align-items-center passaword">
-                                <input type="text" name="text" class="Password" placeholder="Password">
+                            <div class="my-3 d-flex align-items-center">
+                                <input type="text" name="Password" placeholder="Password">
                                 <div class="input-group-append hide-chack">
-                                    <span class="input-group-text">
+                                    <span>
                                         <i class="flaticon-hide"></i>
                                     </span>
                                 </div>
                             </div>
                             <div class="chack-box d-flex justify-content-between align-items-center">
                                 <a href="#">Forgot your password</a>
-                                <label for="checkbox">
-                                    <input type="checkbox" name="checkbox" id="checkbox">
-                                    Remember Me
+                                <label for="checkbox" class="label">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <input type="checkbox" name="checkbox" id="checkbox">
+                                        <span>  Remember Me</span>
+                                   </div>
                                 </label>
                             </div>
                             <div class="my-3">
@@ -272,15 +281,10 @@
                             </div>
 
                             <div class="divider text-center"><span class="bg-white px-4">or</span></div>
-                            <div class="my-3">
-                                <button class="text-white google"><img src="./assets/img/google.svg" alt> Sign in with Google</button>
-                            </div>
-                            <div class="my-3">
-                                <button class="text-white"> <i class="flaticon-facebook-circular-logo"></i> Sign in with Facebook</button>
-                            </div>
-                            <div class="my-3">
-                                <button class="text-white"> <i class="flaticon-twitter"></i> Sign in with Twitter</button>
-                            </div>
+                            <button class="text-white google"><img src="./assets/img/google.svg" alt> Sign in with Google</button>
+                            <button class="text-white"><i class="fab fa-facebook"></i>Sign in with Facebook</button>
+                            <button class="text-white twitter"><i class="fab fa-twitter"></i>Sign in with Twitter</button>
+
                             <div class="my-3">
                                 <p>Don't you have an account? <a href="#">Register</a></p>
                             </div>
@@ -289,7 +293,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- footer top -->
     <section class="footer-bar">
         <div class="container">
