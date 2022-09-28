@@ -5085,6 +5085,10 @@ header #hamburger i {
 /* ----------------------------------
 	login Section Styles
  ------------------------------------ */
+.login-wrapper {
+  position: relative;
+  z-index: -1;
+}
 .login-wrapper .section-title h2 {
   font-style: normal;
   font-weight: 400;
@@ -5248,6 +5252,18 @@ header #hamburger i {
 }
 .login-wrapper .login-widget p a:hover {
   text-decoration: underline;
+}
+.login-wrapper .in-top {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+}
+.login-wrapper .in-bottom {
+  position: absolute;
+  bottom: -20%;
+  right: 0%;
+  z-index: -1;
 }
 
 .news-card-wrapper {
@@ -6561,6 +6577,188 @@ FAQ Section Styles
   background-color: transparent;
   color: #505A62;
   position: relative;
+}
+
+/* ----------------------------------
+	Contact Section Styles
+ ------------------------------------ */
+.contact-wrapper {
+  background-color: #EDF3F7;
+}
+.contact-wrapper h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+.contact-wrapper p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #505A62;
+}
+.contact-wrapper input {
+  height: 60px;
+  border: none;
+  background: #FFF;
+}
+.contact-wrapper input[type=submit] {
+  background: #004581;
+  -webkit-box-shadow: 0px 1px 2px rgba(198, 228, 246, 0.05);
+          box-shadow: 0px 1px 2px rgba(198, 228, 246, 0.05);
+  border-radius: 999px;
+  padding: 14px 25px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  margin: 10px 0px;
+  color: #FFF;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.contact-wrapper input[type=submit]:hover {
+  background-color: #018ABD;
+}
+.contact-wrapper textarea {
+  margin: 10px 0px;
+  padding-top: 20px;
+  height: 180px;
+  border: none;
+  background: #FFF;
+}
+.contact-wrapper .form-control:focus {
+  outline: 1px solid #97CBDC !important;
+}
+.contact-wrapper .contact-info-widget {
+  background-color: #004581;
+}
+.contact-wrapper .contact-info-widget h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+.contact-wrapper .contact-info-widget p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #FFF;
+  margin-bottom: 30px;
+  font-family: "Hero New";
+}
+.contact-wrapper .contact-info-widget span {
+  font-family: "Hero New";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  color: #FFF;
+  margin: 10px 0px;
+}
+.contact-wrapper .contact-info-widget .social-links {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-wrapper .contact-info-widget .social-links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background-color: #FFF;
+  color: #004581;
+  margin: 0px 4px;
+}
+.contact-wrapper .contact-info-widget .social-links a:hover {
+  background-color: #018ABD;
+  color: #FFF;
+}
+
+.error-wrapper .error-wedged .content h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  color: #018ABD;
+}
+.error-wrapper .error-wedged .content p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.error-wrapper .error-wedged .search-area {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.error-wrapper .error-wedged .search-area input[type=text], .error-wrapper .error-wedged .search-area input[type=submit] {
+  height: 60px;
+}
+.error-wrapper .error-wedged .search-area input[type=text] {
+  background: #FFF;
+  width: 100%;
+  padding: 0px 20px;
+}
+.error-wrapper .error-wedged .search-area input[type=submit] {
+  padding: 12px 24px;
+  border-radius: 999px;
+  background-color: #018ABD;
+  color: #FFF;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.error-wrapper .error-wedged .search-area input[type=submit]:hover {
+  background-color: #02294B;
+}
+.error-wrapper .error-wedged .search-area .input-group-append {
+  border-top-left-radius: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: none;
+}
+.error-wrapper .error-wedged .search-area .input-group-append span {
+  height: 60px;
+  background: #FFF;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(33, 37, 41);
+  text-align: center;
+  white-space: nowrap;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.error-wrapper .error-wedged .search-area .input-group-append span i {
+  cursor: pointer;
 }
 
 /* ----------------------------------

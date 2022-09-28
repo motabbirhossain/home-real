@@ -3,6 +3,8 @@
  ------------------------------------ */
 
  .login-wrapper{
+    position: relative;
+    z-index: -1;
     .section-title{
         h2{
             font-style: normal;
@@ -163,5 +165,17 @@
                 }
             }
         }
+    }
+    .in-top{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        z-index: -1;
+    }
+    .in-bottom{
+        position: absolute;
+        bottom: -20%;
+        right: 0%;
+        z-index: -1;
     }
  }
