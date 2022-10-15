@@ -11,19 +11,23 @@ $pink: #FF681B;
 $info: #FAA21A;
 $green: #3FAD48;
 
-$primary: #004581;
+$primary: #DB8C23;
 $secondary: #018ABD;
 $secondary-2:#97CBDC;
+$secondary-3:#224265;
 $tertary:#02294B;
+$tertary-2:#004581;
 $text:#505A62;
 $text-2:#212E45;
+$text-3:#F7F2EC;
 $shadow:#EDF3F7;
 
 // Theme Color - Defualt Colors
+
 $section-bg: #EDF3F7;
 $theme-color: #002538;
-$second-color:#00AF92;
-// $second-color-dark:;
+$second-color:#45BF75;
+$second-color-2:#08916B;
 $theme-color-2: #FF666B;
 $theme-color-3:#E0E0E3;
 // $theme-color-4:;
@@ -81,7 +85,21 @@ $theme-color-3:#E0E0E3;
         position: relative;
     }
 }
-
+@mixin border {
+    &::after{
+        position: absolute;
+        clear: both;
+        display: block;
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: rgba(247, 242, 236, 0.2);
+        transform: rotate(15deg);
+        right: 0%;
+        top: 0%;
+        z-index: 5;
+    }
+}
 @mixin overlay($color, $opacity) {
     z-index: 1;
     position: relative;

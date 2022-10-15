@@ -32,6 +32,10 @@ a {
   border: 0;
   }
 }
+input{
+    height: 50px;
+    width: 100%;
+}
 input:focus {
   outline: none;
 }
@@ -87,9 +91,9 @@ form {
 }
 
 .form-control:focus {
-    outline: none !important;
-    border: none !important;
-    box-shadow:  0 0 0;
+    outline: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow:  0 0 0 !important;
 }
 
 h1 a ,h2 a, h3 a, h4 a, h5 a, h6 a  {
@@ -132,7 +136,6 @@ button {
         text-decoration: none;
     }
 }
-
-input, textarea, button {
+button {
     border: 0px;
 }

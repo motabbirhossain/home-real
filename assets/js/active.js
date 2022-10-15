@@ -9,7 +9,7 @@ Author: RRDevs
     $(document).ready(function () {
 
         $(".partners-carousel").owlCarousel({
-            items: 7,
+            items: 6,
             dots: false,
             loop: true,
             autoplayTimeout: 8000,
@@ -38,7 +38,7 @@ Author: RRDevs
                 },
                 // breakpoint from 992 up
                 1400 : {
-                    items: 7
+                    items: 6
                 },
             }
         });
@@ -117,6 +117,7 @@ Author: RRDevs
                 },
             }
         });
+
         //pro-detail-carousel
         $(".pro-detail-carousel").owlCarousel({        
             items: 3,     
@@ -143,16 +144,97 @@ Author: RRDevs
                 },
             }
         });
-
-        //featured-carousel
-        $(".featured-carousel").owlCarousel({        
+        //blog-carousel
+        $(".blog-carousel").owlCarousel({        
+            items: 3,     
+            dots: false,
+            loop: true,
+            autoplayTimeout: 8000,
+            autoplay: true,
+            navText: ['<i class="fal fa-long-arrow-right"></i>', '<i class="fal fa-long-arrow-left"></i>'],
+            responsive : {
+                // breakpoint from 0 up
+                0 : {
+                    items: 1                    
+                },
+                // breakpoint from 600 up
+                600: {
+                    items: 1
+                },
+                // breakpoint from 768 up
+                768 : {
+                    items: 1
+                },
+                // breakpoint from 1100 up
+                1000 : {
+                    items: 2
+                },
+                // breakpoint from 1400 up
+                1400 : {
+                    items: 3
+                },
+            }
+        });
+        //categories-carousel
+        $(".categories-carousel").owlCarousel({        
+            items: 5,     
+            dots: false,
+            loop: true,
+            autoplayTimeout: 8000,
+            autoplay: true,
+            navText: ['<i class="fal fa-long-arrow-left"></i>', '<i class="fal fa-long-arrow-right"></i>'],
+            responsive : {
+                // breakpoint from 0 up
+                0 : {
+                    items: 1                    
+                },
+                 // breakpoint from 600 up
+                 400: {
+                    items: 1
+                },
+                // breakpoint from 600 up
+                600: {
+                    items: 2
+                },
+                // breakpoint from 768 up
+                768 : {
+                    items: 4
+                },
+                // breakpoint from 1100 up
+                1000 : {
+                    items: 5
+                },
+                // breakpoint from 1400 up
+                1400 : {
+                    items: 5
+                },
+            }
+        });
+        //banner-carousel
+        $(".banner-carousel").owlCarousel({        
             items: 1,     
             dots: true,
             loop: true,
             autoplayTimeout: 8000,
+            autoplay: true,
+        });
+        //agent-review
+        $(".agent-review").owlCarousel({        
+            items: 1,     
+            dots: true,
+            loop: true,
+            autoplayTimeout: 8000,
+            autoplay: true,
+        });
+        //featured-carousel
+        $(".featured-carousel").owlCarousel({        
+            items: 1,     
+            dots: false,
+            loop: true,
+            autoplayTimeout: 8000,
             autoplay:true,
             nav: true,
-            navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+            navText: ['<i class="fas fa-angle-right"></i>', '<i class="fas fa-angle-left"></i>'],
             
         });
         
@@ -226,90 +308,6 @@ Author: RRDevs
         //     }
         // });
 
-        // //05
-        // $(".brand-carousel-active-2").owlCarousel({
-        //     margin: 80,
-        //     loop: true,
-        //     autoplayTimeout: 5000,
-        //     autoplay:true,
-        //     responsive : {
-        //         // breakpoint from 0 up
-        //         0 : {
-        //             items: 2,
-        //         },
-        //         // breakpoint from 768 up
-        //         480 : {
-        //             items: 3
-        //         },
-        //         // breakpoint from 768 up
-        //         768 : {
-        //             items: 3
-        //         },
-        //         // breakpoint from 992 up
-        //         992 : {
-        //             items: 5
-        //         },
-                
-        //         1191 : {
-        //             items: 6
-        //         },
-        //     }
-        // });
-
-        // $(".brand-carousel-2").owlCarousel({
-        //     margin: 50,
-        //     loop: true,
-        //     autoplayTimeout: 5000,
-        //     autoplay:true,
-        //     responsive : {
-        //         // breakpoint from 0 up
-        //         0 : {
-        //             items: 2,
-        //         },
-        //         // breakpoint from 768 up
-        //         480 : {
-        //             items: 3
-        //         },
-        //         // breakpoint from 768 up
-        //         768 : {
-        //             items: 3
-        //         },
-        //         // breakpoint from 992 up
-        //         992 : {
-        //             items: 4
-        //         },
-                
-        //         1191 : {
-        //             items: 6
-        //         },
-        //     }
-        // });
-
-        // $(".global-carousel").owlCarousel({
-        //     margin: 80,
-        //     loop: true,
-        //     autoplayTimeout: 5000,
-        //     autoplay:true,
-        //     responsive : {
-        //         // breakpoint from 0 up
-        //         0 : {
-        //             items: 2,
-        //         },
-        //         // breakpoint from 768 up
-        //         480 : {
-        //             items: 3
-        //         },
-        //         // breakpoint from 768 up
-        //         768 : {
-        //             items: 3
-        //         },
-        //         // breakpoint from 992 up
-        //         992 : {
-        //             items: 4
-        //         },
-                
-        //     }
-        // });
 
         // $(".project-showcase-carousel").owlCarousel({
         //     margin: 30,
@@ -499,20 +497,20 @@ Author: RRDevs
           filtering Init
         ============================*/
 
-        // // init Isotope
-        // var $grid = $('.filter-item').isotope({
-        // // options
-        // });
-        // // filter items on button click
-        // $('.filter-button-widget').on( 'click', 'button', function() {
-        //     var filterValue = $(this).attr('data-filter');
-        //     $grid.isotope({ filter: filterValue });
-        // });
-        // var catButton = '.filter-button-widget button';
-        // $(catButton).on('click', function(){
-        //     $(catButton).removeClass('active');
-        //     $(this).addClass('active');
-        // });
+        // init Isotope
+        var $grid = $('.filter-item').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.filter-button-widget').on( 'click', 'button', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+        var catButton = '.filter-button-widget button';
+        $(catButton).on('click', function(){
+            $(catButton).removeClass('active');
+            $(this).addClass('active');
+        });
         /*==========================
            Scroll To Up Init
         ============================*/
@@ -584,7 +582,8 @@ Author: RRDevs
         // //WOW
         // new WOW().init();
         
-        // //CounterUp
+        //CounterUp
+        $('.counter').counterUp();
         // const counterUp = window.counterUp.default
 
         // const callback = entries => {

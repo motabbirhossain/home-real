@@ -48,45 +48,31 @@ FAQ Section Styles
 .question-wrapper-2{
     background: theme-color-3;
     position: relative;
-    .answer-video{
-       margin-top: 20px;
-        height: 690px;
-        width: 100%;
-        border-radius: 4px;
-        .video-play-btn{
-            .play-video{
-                width: 60px;
-                height: 60px;
-                background: $theme-color-2;
-                border-radius: 50%;
-                display: flex;;
-                justify-content: center;
-                align-items: center;
-                animation: playVideo infinite 3s;
-                color: $white;
-            }
-        }
-    }
-    .one ,.tow{
+    .question-bg{
+        height: 550px;
         position: relative;
-       &::after{
-        z-index: -1;
-        border-radius: 5px;
-        position: absolute;
-        clear: both;
-        content: "";
-        display: block;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: $theme-color-2;
-        clip-path: polygon(45% 0, 100% 0, 100% 100%, 0 100%, 0 89%);
-       }
-    }
-    .tow{
-        &::after{
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%, 0 11%);
+        border-radius: 4px;
+        .answer-video{
+            position: absolute;
+            margin-top: 20px;
+            width: 390px;
+            height: 400px;
+            bottom:-150px;
+            right: -100px;
+            border-radius: 4px;
+            .video-play-btn{
+                .play-video{
+                    width: 60px;
+                    height: 60px;
+                    background: $theme-color-2;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    animation: playVideo infinite 3s;
+                    color: $white;
+                }
+            }
         }
     }
     .circle-element{
@@ -96,10 +82,10 @@ FAQ Section Styles
         z-index: -1;
         animation: circle 12s ease-in-out infinite;
     }
-    .pluse-element{
+    .vector-element{
         position: absolute;
-        top: 15%;
-        right: 15%;
-        animation: pluse 6s ease-in-out infinite;
+        bottom: -20%;
+        left:0%;
+        z-index: -1;
     }
 }

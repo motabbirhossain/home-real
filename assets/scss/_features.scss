@@ -630,3 +630,33 @@
         }
     }
 }
+//categories-wrapper
+.categories-wrapper{
+    .categories-widget{
+        p{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            color: $white;
+            margin-bottom: 40px;
+        }
+        .categories-item {
+            margin: 0px 15px;
+            background: #0194CB;
+            border-radius: 4px;
+            img{
+                margin: 0 auto;
+            }
+            h5{
+                margin-top: 20px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 100%;
+                font-family: $heading-font;
+                color: $white;
+            }
+        }
+    }
+}

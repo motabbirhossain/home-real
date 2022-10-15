@@ -80,7 +80,87 @@
   }
 
 }
-
+//hero-wrapper-2
+.banner-wrapper{
+  .banner-item{
+    padding: 200px 0px;
+    position: relative;
+    @include overlay(#0E2E50, 0.30);
+    .single-properties{
+      .hous-contents{
+        h4{
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 100%;
+            
+        }
+        i{
+            color: $second-color ;
+            margin-right: 10px;
+        }
+        .price{
+          h3{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 100%;
+            color: $second-color;
+            span{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #505A62;
+            }
+          }
+          a{
+            padding: 10px 20px;
+            background-color: $second-color;
+            border-radius: 2px;
+            font-family: $lato;
+            margin-bottom: 0;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 100%;
+            text-transform: uppercase;
+            &:hover{
+                background-color: $second-color-2;
+            }
+          }
+        }
+      }
+    }
+  }
+  .banner-content{
+    .thmb_cntnt{
+      margin-bottom: 20px;
+      p{
+          font-size: 14px;
+          color: $white;
+          padding: 5px 10px;
+          background-color: $second-color;
+          border-radius:2px;
+          &:nth-child(2){
+              margin-left: 10px;
+              background-color: $white;
+              color: $second-color;
+          }
+      }
+    }
+    h2{
+      font-family: $body-font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 48px;
+      span{
+        color: $second-color;
+      }
+    }
+  }
+}
 //service
 .service{
   position: relative;

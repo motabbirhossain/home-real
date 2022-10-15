@@ -1,3 +1,85 @@
 /* ----------------------------------
 	About Us Section Styles
  ------------------------------------ */
+.about-wrapper{
+	position: relative;
+	.about-content{
+		h3{
+			font-style: normal;
+			font-weight: 600;
+			font-size: 36px;
+			line-height: 48px;
+			margin-bottom: 20px;
+		}
+		p{
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 28px;
+			margin-bottom: 20px;
+
+		}
+		.fed-back{
+			border-left: 2px solid $secondary;
+			padding-left: 10px;
+		}
+		.icons{
+			border-radius: 50%;
+			height: 60px ;
+			width: 60px;
+			margin: 0 auto;
+			border: 1.5px solid $secondary;
+		}
+		.content{
+			padding-left: 40px;
+			h5{
+				font-style: normal;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 28px;
+				margin-bottom: 10px;
+			}
+			p{
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 26px;
+			}
+		}
+		.btn{
+			padding: 20px 40px;
+			background-color: $secondary;
+			border-radius: 4px;
+			color: $white;
+		}
+		.video-play-btn{
+			margin-left: 30px;
+			.play-video{
+				width: 60px;
+				height: 60px;
+				background: $secondary;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				animation: playVideo infinite 3s;
+				color: $white;
+			}
+			p{
+				margin-bottom: 0;
+				color: $secondary;
+				margin-left: 10px;
+			}
+		}
+	}
+	.vector-element-one{
+		position: absolute;
+		bottom: 0%;
+		left: 0%;
+	}
+	.vector-element-tow{
+		position: absolute;
+		bottom: 0%;
+		right: 0%;
+	}
+}
